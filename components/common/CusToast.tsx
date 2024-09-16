@@ -18,9 +18,9 @@ export const showMessage = (msg = '', type = '') => {
 };
 const styles = `
 .toast-custom {
-    background: #2B3F5C !important; /* Dark background color */
-    border-radius: 12px; /* Increased border radius */
-    color: white; /* White text color */
+    background: #2B3F5C !important;
+    border-radius: 12px;
+    color: white;
     margin-bottom:40px;
 }
 `;
