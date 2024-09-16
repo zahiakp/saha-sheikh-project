@@ -1,16 +1,21 @@
 
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Cookies from "js-cookie";
 import Swal from "sweetalert2";
 import { showMessage } from "@/components/common/CusToast";
+import CusConfirm from "@/components/common/CusConfirm";
 
 function Logout() {
-  // Handle logout logic
-  const handleLogout = async () => {
-    const userConfirmed = window.confirm("Are you sure you want to logout?");
+  
 
-    if (userConfirmed) {
+  // Function to open the modal and set the type
+  
+  const [isOpen,setIsOpen] = useState(false)
+  // Handle logout logic
+ const handleLogout = async () => {
+  const confirm = window.confirm('are ready to logout ?')
+   if(confirm){
       // Remove the token cookie
       Cookies.remove("token");
       // Redirect to login page
@@ -25,12 +30,20 @@ function Logout() {
         <div className="arrow"></div>
       </div>
     </button> */}
-    <button onClick={handleLogout} className="absolute bottom-0 w-full button p-5  bg-secondary/55 hover:bg-primary hover:text-white duration-200" aria-label="Logout">
+    <button onClick={() => handleLogout()} className="absolute bottom-0 w-full button p-5  bg-secondary/55 hover:bg-primary hover:text-white duration-200" aria-label="Logout">
       Log Out
       <div className="arrow-wrapper">
         <div className="arrow bg-secondary/55"></div>
       </div>
-    </button></>
+    </button>
+    {/* {isModalOpen && (
+        <CusConfirm
+          type={confirmType}
+          close={setIsModalOpen}
+          onConfirm={handleLogout} // Pass the confirmation handler
+        />
+      )} */}
+     </>
   );
 }
 

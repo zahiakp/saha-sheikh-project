@@ -5,7 +5,7 @@ function page() {
   return (
     <AdminLayout>
       <div className="flex w-full h-full items-center justify-center">
-        <p className="text-7xl font-bold">Books</p>
+        <p className="text-7xl font-bold">Programs</p>
       </div>
     </AdminLayout>
   );
