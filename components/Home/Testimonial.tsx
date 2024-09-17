@@ -10,7 +10,6 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { BsArrowRight } from "react-icons/bs";
 
 function Testimonial() {
   const TEST = [

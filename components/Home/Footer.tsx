@@ -2,7 +2,6 @@ import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { IoLogoWhatsapp } from "react-icons/io5";
 import { RiWhatsappFill } from "react-icons/ri";
 
 function Footer() {
