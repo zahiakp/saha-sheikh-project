@@ -61,3 +61,38 @@
 .button:hover .arrow:before {
   right: 0;
 }
+.font-poppins{
+  font-family: 'poppins', Courier, monospace;
+}
+.inner-shadow{
+  box-shadow: rgba(0, 0, 0, 0.658) 0px -180px 36px -28px inset;
+}
+
+.testimonials .mySwiper {
+  padding-bottom: 60px !important;
+  padding-top: 20px !important;
+}
+.testimonials .swiper-pagination-bullet {
+  background: #bd6b00 !important;
+  transition: 0.5s !important;
+  width: 30px !important;
+  border-radius: 10px !important;height: 5px !important;
+}
+.testimonials .swiper-pagination-bullet-active {
+  background: #985600 !important;
+  width: 80px !important;
+  height: 5px !important;
+  border-radius: 10px !important;
+}
+.bg-animation{
+  background-size: 150% 150%;
+  background-position: 0% 50%;
+}
+.bg-animation:hover{
+  transition: .5s;
+  background-position: 100% 50%;
+}
+::selection {
+  background-color: #bd6b00; /* Custom background color */
+  color: #ffffff; /* Custom text color */
+}
