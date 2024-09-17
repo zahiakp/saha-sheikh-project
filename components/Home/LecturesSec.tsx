@@ -6,7 +6,6 @@ import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
-import { NEWS } from "../data/data";
 import { ROOT_URL } from "../data/func";
 import { getRelativeTime } from "../common/DateConvert";
 import NewsCard from "../common/NewsCard";
