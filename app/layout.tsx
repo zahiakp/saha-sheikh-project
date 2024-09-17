@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Outfit } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import ToastBox from "@/components/common/Toast";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const outfit = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Saha Sheikh Abubakr Egypt",
