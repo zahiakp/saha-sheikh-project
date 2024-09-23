@@ -87,7 +87,7 @@ function Dashboard() {
                   href={item.url}
                   title=""
                   className={`${
-                    pathname == item.url
+                    item.url.startsWith(pathname)
                       ? "text-white bg-secondary"
                       : "bg-white text-zinc-800 hover:bg-secondary/20"
                   } flex items-center px-4 py-3 text-sm font-medium  transition-all duration-300   rounded-xl group`}

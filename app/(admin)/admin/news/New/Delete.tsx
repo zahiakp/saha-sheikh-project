@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { MdDelete, MdDeleteOutline } from "react-icons/md";
 // import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { showMessage } from "@/components/common/CusToast";
+import { showMessage } from "@/components/common/CusToast"
 import { deleteNews } from "./func";
 
 

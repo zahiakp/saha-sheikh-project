@@ -29,27 +29,27 @@ export async function uploadNews(
 ) {
   const URL: string = `${ROOT_URL}news/actions.php?api=${API_KEY}`;
 
-  // try {
-  //   const response = await axios.post(
-  //     URL,
-  //     JSON.stringify({
-  //       title,body,image,type,url,tags,status
-  //     })
-  //   );
+  try {
+    const response = await axios.post(
+      URL,
+      JSON.stringify({
+        title,body,image,type,url,tags,status
+      })
+    );
 
-  //   if (response.status === 201) {
-  //     const data = response.data;
-  //     console.log("News Added");
-  //     return true;
-  //   } else {
-  //     const data = response.data;
-  //     console.log("Failed to Add News");
-  //     return false;
-  //   }
-  // } catch (error: any) {
-  //   console.log(error.message);
-  //   return false;
-  // }
+    if (response.status === 201) {
+      const data = response.data;
+      console.log("News Added");
+      return true;
+    } else {
+      const data = response.data;
+      console.log("Failed to Add News");
+      return false;
+    }
+  } catch (error: any) {
+    console.log(error.message);
+    return false;
+  }
 }
 
 
@@ -158,7 +158,7 @@ try {
   if (response.status === 200) {
     return response.data;
   } else {
-    console.error(`Failed to get ${category} Newss :`, response.statusText);
+    console.error(`Failed to get ${category} Articles :`, response.statusText);
     return null; 
   }
 } catch (error) {
@@ -178,7 +178,7 @@ try {
   if (response.status === 200) {
     return response.data;
   } else {
-    console.error(`Failed to get ${count} Newssb:`, response.statusText);
+    console.error(`Failed to get ${count} News:`, response.statusText);
     return null; 
   }
 } catch (error) {
@@ -198,7 +198,7 @@ try {
   if (response.status === 200) {
     return response.data;
   } else {
-    console.error(`Failed to get ${count} Newssb:`, response.statusText);
+    console.error(`Failed to get ${count} News:`, response.statusText);
     return null; 
   }
 } catch (error) {
@@ -208,7 +208,7 @@ try {
 }
 
 
-export async function getNewssasNewArray(
+export async function getNewsasNewArray(
 ) {
 const URL: string = `${ROOT_URL}news/actions.php?api=${API_KEY}&action=catbasedarray`;
 
@@ -218,7 +218,7 @@ try {
   if (response.status === 200) {
     return response.data;
   } else {
-    console.error(`Failed to get Newssb:`, response.statusText);
+    console.error(`Failed to get News:`, response.statusText);
     return null; 
   }
 } catch (error) {
@@ -249,3 +249,4 @@ export async function deleteNews(
     return null;
   }
 }
+

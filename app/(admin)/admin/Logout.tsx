@@ -5,6 +5,7 @@ import Cookies from "js-cookie";
 import Swal from "sweetalert2";
 import { showMessage } from "@/components/common/CusToast";
 import CusConfirm from "@/components/common/CusConfirm";
+import StyledButton from "@/components/common/StyledButton";
 
 function Logout() {
   
@@ -30,8 +31,8 @@ function Logout() {
         <div className="arrow"></div>
       </div>
     </button> */}
-    <button onClick={() => handleLogout()} className="absolute bottom-0 w-full button p-5  bg-secondary/55 hover:bg-primary hover:text-white duration-200" aria-label="Logout">
-      Log Out
+    <button onClick={() => handleLogout()} className="group absolute bottom-0 w-full button p-5  bg-secondary/55 hover:bg-primary hover:text-white duration-200" aria-label="Logout">
+      <StyledButton text={"Log Out"}/>
       <div className="arrow-wrapper">
         <div className="arrow bg-secondary/55"></div>
       </div>
