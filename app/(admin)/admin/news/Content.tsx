@@ -25,6 +25,7 @@ import Spinner from "@/components/common/Spinner";
 import DeleteItem from "./New/Delete";
 import CusConfirm from "@/components/common/CusConfirm";
 import { VscLoading } from "react-icons/vsc";
+import StyledButton from "@/components/common/StyledButton";
 
 function Content({ article }: { article: any }) {
   const [imageView, setImageView] = useState<any>(false);
@@ -107,11 +108,11 @@ function Content({ article }: { article: any }) {
             </div>
           </div>{" "}
           <Link
-            href={"/admin/articles/Add"}
-            className="gap-2 cursor-pointer p-[8px] px-4 bg-primary hover:shadow-lg hover:-translate-y-1 duration-200 rounded-lg text-white w-fit shadow-lg flex items-center"
+            href={"/admin/news/New"}
+            className="gap-2 cursor-pointer p-[8px] px-4 font-semibold bg-primary hover:shadow-lg hover:-translate-y-1 duration-200 rounded-lg text-white w-fit shadow-lg flex items-center"
           >
             <RiAddCircleFill />
-            Create New
+            <StyledButton text={'Add New'}/>
           </Link>
         </div>
       </main>

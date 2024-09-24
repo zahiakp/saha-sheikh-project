@@ -171,7 +171,7 @@ function Footer() {
 
         <div className="flex items-center justify-between">
           <p className="text-sm text-center text-gray-600">
-            © Copyright 2021, All Rights Reserved by Postcraft
+           Saha Sheikh Web © Copyright 2024. Powered by <a href="https://ziqx.in" className="text-primary cursor-pointer">ziqx</a>
           </p>
           <div className="md:flex gap-3 hidden">
             <a
